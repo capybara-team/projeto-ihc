@@ -13,7 +13,7 @@ import { createStackNavigator } from 'react-navigation'
 import Logout from './src/components/views/Logout'
 import AppRoutes from './appRoutes'
 
-const AppNav = createStackNavigator({...AppRoutes, Logout},
+const AppNav = createStackNavigator({ ...AppRoutes, Logout },
     { initialRouteName: 'Home', headerMode: 'none' })
 
 export default class App extends Component {
@@ -21,8 +21,7 @@ export default class App extends Component {
         super(props);
 
         this.state = {
-            // login: null
-            login: { name: 'João Souza' }
+            login: null
         }
     }
 
